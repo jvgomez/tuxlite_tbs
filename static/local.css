@@ -75,7 +75,8 @@ h3 { margin-top: 2.5em; }
 .social a[href*='stackoverflow.com']:before {content: url('./images/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
 .social a[href*='twitter.com']:before {content: url('./images/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
 
-/* Support for \note in Markdown - taken from OMPL code. */
+/* definition lists for the "note section"" taken from OMPL code. Usage:
+ * <dl class="section note"><dt>Text1</dt><dd>Text2</dd></dl>*/
 dl.attention, dl.note {
     background-color: #f8f8fa;
     padding: 10px 20px;
