@@ -5,6 +5,13 @@
             <h1>{{ article.title }}</h1>
             {% include "metadata.html" %}
         </div>
+	{% if article.toc %}
+	<h4>
+	    <nav class="toc">
+	    {{ article.toc }}
+	    </nav>
+	</h4>
+	{% endif %}
 	
         <div>{{ article.content }}</div>
 	

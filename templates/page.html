@@ -4,6 +4,13 @@
 <section id="content" class="body">    
     <h2 class="content-title">
         {{ page.title }}
+	{% if page.toc %}
+	<h4>
+	    <nav class="toc">
+	    {{ page.toc }}
+	    </nav>
+	{% endif %}
+	</h4>
         {% if page.translations %}
             <a href="{{ SITEURL }}/{{ page.url }}" class="btn btn-info xsmall">{{ page.lang or DEFAULT_LANG }}</a>
             {% for translation in page.translations %}
@@ -16,3 +23,6 @@
     {{ page.content }}
 </section>
 {% endblock %}
+
+
+
