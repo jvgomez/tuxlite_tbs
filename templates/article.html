@@ -6,11 +6,13 @@
             {% include "metadata.html" %}
         </div>
 	{% if article.toc %}
-	<h4>Contents:
-	    <nav class="toc">
-	    {{ article.toc }}
-	    </nav>
-	</h4>
+	<h3>Contents:
+	    <h4>
+	        <nav class="toc">
+	        {{ article.toc }}
+	        </nav>
+	    </h4>
+	</h3>
 	{% endif %}
 	
         <div>{{ article.content }}</div>
