@@ -11,6 +11,7 @@ My version with the following fixes:
 - Added support for tables of contents.
 - Since better-figures-and-images Pelican plugin only works with rst files, I have included the CSS settings to use them in embedded HTML in the Markdown files.
 - Github-like code syntax highlighting from https://github.com/richleland/pygments-css
+- Google Analytics template changed.
 - Other minor fixes
 
 ## Screenshot ##
